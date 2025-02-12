@@ -15,3 +15,9 @@ resource "aws_instance" "example" {
 resource "aws_s3_bucket" "ex" {
   bucket = "mys3bucket0802"
 }
+
+resource "aws_vpc" "project1" {
+  cidr_block = "10.0.0.0/24"
+  enable_dns_support = true
+  enable_dns_hostnames = true
+}
