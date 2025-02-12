@@ -9,7 +9,7 @@ resource "aws_instance" "example" {
     tags = {
         Name = "HelloWorld"
     }
-    key_name = "connect-us-1"
+    key_name = "connect-us"
 }
 
 resource "aws_s3_bucket" "ex" {
@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "ex" {
 }
 
 resource "aws_vpc" "project1" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/24"
   enable_dns_support = true
   enable_dns_hostnames = true
 }
