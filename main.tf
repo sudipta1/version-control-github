@@ -9,7 +9,7 @@ resource "aws_instance" "example" {
     tags = {
         Name = "HelloWorld"
     }
-    key_name = "connect-us"
+    key_name = "connect-us-1"
 }
 
 resource "aws_s3_bucket" "ex" {
